@@ -1,5 +1,24 @@
 <div class="container">
     <h1>Registro de usuario</h1>
 
-    <app-formulario-usuario></app-formulario-usuario>
+    <div class="container">
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email"/><br/>
+    
+            <label for="contrasenia">Contraseña:</label>
+            <input type="text" id="contrasenia"/><br/>
+    
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"/><br/>
+    
+            <label for="apellidos">Apellidos:</label>
+            <input type="number" id="apellidos"/><br/>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono"/><br/>
+        </form>
+
+        <button class="btn btn-primary" (click)="registrarUsuario()">Registrarse</button>
+    </div>
 </div>
