@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { Persona } from 'src/app/model/persona';
 import { ServicioUsuariosService } from 'src/app/services/servicio-usuarios.service';
 
@@ -15,5 +14,15 @@ export class RegistroComponent {
 
   registrarUsuario() {
     this.servicioUsuarios.addUsuario(this.usuario);
+  }
+
+  prueba() {
+    console.log(this.servicioUsuarios.getUsuario(this.usuario.telefono))
+  }
+
+  edit() {
+    console.log(this.servicioUsuarios.getListaUsuarios());
+    this.servicioUsuarios.editUsuario(this.usuario);
+    console.log(this.servicioUsuarios.getListaUsuarios());
   }
 }
