@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from 'src/app/model/persona';
 
 @Component({
   selector: 'app-listado',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent {
-
+    usuarios = [
+      {nombre: 'Jose Miguel', id: 14}
+      
+    ]
 }
