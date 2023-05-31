@@ -4,19 +4,19 @@
     <div class="container">
         <form>
             <label for="email">Email:</label>
-            <input type="email" id="email"/><br/>
+            <input type="email" id="email" name="email" [(ngModel)]="usuario.email"/><br/>
     
             <label for="contrasenia">Contraseña:</label>
-            <input type="text" id="contrasenia"/><br/>
+            <input type="text" id="contrasenia" name="contrasenia" [(ngModel)]="usuario.contrasenia"/><br/>
     
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre"/><br/>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre"/><br/>
     
             <label for="apellidos">Apellidos:</label>
-            <input type="number" id="apellidos"/><br/>
+            <input type="text" id="apellidos" name="apellidos" [(ngModel)]="usuario.apellidos"/><br/>
     
             <label for="telefono">Teléfono:</label>
-            <input type="number" id="telefono"/><br/>
+            <input type="number" id="telefono" name="telefono" [(ngModel)]="usuario.telefono"/><br/>
         </form>
 
         <button class="btn btn-primary" (click)="registrarUsuario()">Registrarse</button>

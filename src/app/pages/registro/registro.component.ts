@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { FormControl } from '@angular/forms';
 import { Persona } from 'src/app/model/persona';
 import { ServicioUsuariosService } from 'src/app/services/servicio-usuarios.service';
 
@@ -9,9 +9,9 @@ import { ServicioUsuariosService } from 'src/app/services/servicio-usuarios.serv
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
-  usuario: Persona = new Persona(0, "admin@gmail.com", "admin", "Prueba", "Probador", 546987123);
+  usuario: Persona = new Persona(0, "", "", "", "", 0);
 
-  constructor(private servicioUsuarios: ServicioUsuariosService) { }
+  constructor(private servicioUsuarios: ServicioUsuariosService) {}
 
   registrarUsuario() {
     this.servicioUsuarios.addUsuario(this.usuario);
