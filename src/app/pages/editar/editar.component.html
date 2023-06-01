@@ -3,22 +3,22 @@
 
     <div class="container">
         <form>
-            <label for="email">Email:</label>
+            <label for="email" class="fw-bold">Email:</label><br/>
             <input type="email" id="email" name="email" [(ngModel)]="usuario.email"/><br/>
     
-            <label for="contrasenia">Contraseña:</label>
+            <label for="contrasenia" class="fw-bold">Contraseña:</label><br/>
             <input type="text" id="contrasenia" name="contrasenia" [(ngModel)]="usuario.contrasenia"/><br/>
     
-            <label for="nombre">Nombre:</label>
+            <label for="nombre" class="fw-bold">Nombre:</label><br/>
             <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre"/><br/>
     
-            <label for="apellidos">Apellidos:</label>
+            <label for="apellidos" class="fw-bold">Apellidos:</label><br/>
             <input type="text" id="apellidos" name="apellidos" [(ngModel)]="usuario.apellidos"/><br/>
     
-            <label for="telefono">Teléfono:</label>
+            <label for="telefono" class="fw-bold">Teléfono:</label><br/>
             <input type="number" id="telefono" name="telefono" [(ngModel)]="usuario.telefono"/><br/>
         </form>
 
-        <button class="btn btn-primary" (click)="editarUsuario()">Guardar</button>
+        <button class="btn btn-danger m-1" [routerLink]="['/listaUsuarios']">Cancelar</button>
+        <button class="btn btn-primary m-1" (click)="editarUsuario()">Guardar</button>
     </div>
-</div><p>editar works!</p>
